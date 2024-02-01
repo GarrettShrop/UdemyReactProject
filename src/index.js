@@ -10,12 +10,19 @@ const root = ReactDOM.createRoot(el);
 
 // 4) Create a component
 function App() {
-    let message = 'Bye there!';
-    if (Math.random() > 0.5) {
-        message = 'Hi there!';
-    }
-    
-    return <h1>The message is {message} and the current time is: {new Date().toLocaleTimeString()}</h1>;
+    const inputType = "number";
+    const minValue = 5;
+    const message = "Enter age";
+    return (
+        <input
+            type={inputType}
+            min={minValue}
+            max={10}
+            list={[1,2,3]}
+            style={{ color: 'red',border: '3px solid green' }}
+            alt={message}
+        />
+    );
 }
 
 // 5) Show the component on the screen
