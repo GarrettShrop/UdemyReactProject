@@ -10,19 +10,7 @@ const root = ReactDOM.createRoot(el);
 
 // 4) Create a component
 function App() {
-    const inputType = "number";
-    const minValue = 5;
-    const message = "Enter age";
-    return (
-        <input
-            type={inputType}
-            min={minValue}
-            max={10}
-            list={[1,2,3]}
-            style={{ color: 'red',border: '3px solid green' }}
-            alt={message}
-        />
-    );
+    return <input style={{ border: '1px solid blue'}} placeholder="Enter age" />;
 }
 
 // 5) Show the component on the screen
